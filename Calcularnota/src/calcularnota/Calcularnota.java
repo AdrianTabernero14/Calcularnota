@@ -17,7 +17,7 @@ public class Calcularnota {
      */
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        DecimalFormat redondeo =new DecimalFormat("#.##");
+        DecimalFormat formato =new DecimalFormat("#.##");//Funcion para que el formato del numero que salga en pantalla sea la deseada
         double num;
         double media;
         double nota1,nota2;
@@ -27,7 +27,7 @@ public class Calcularnota {
         media = sc.nextDouble();        
         nota1 = num*0.4;
         nota2 = (media-nota1)/0.6;
-        System.out.println("Para tener un "+media+" en el trimestre necesitas sacar un "+redondeo.format(nota2)+" en el segundo examen");
+        System.out.println("Para tener un "+media+" en el trimestre necesitas sacar un "+formato.format(nota2)+" en el segundo examen");
     }
     
 }
